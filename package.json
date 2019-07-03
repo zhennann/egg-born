@@ -32,6 +32,12 @@
     "egg-born-init-config": "^1.0.4",
     "glob": "^7.1.2",
     "istextorbinary": "^2.2.1",
-    "fs-extra": "^7.0.0"
-  }
+    "fs-extra": "^7.0.0",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
